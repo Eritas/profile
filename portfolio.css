@@ -5,10 +5,11 @@ body {
 #main {
     display: flex;
 
-    margin: 10px 10px 0px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-#else {
+#content-area {
     flex-basis: 70%;
     background-color: white;
     background-image: url("photos/leafBorder.png");
@@ -17,7 +18,7 @@ body {
     opacity: 0.5;
 }
 
-#else h1, p {
+#content-area h1, p, address {
     text-align: center;
     color: black;
     opacity: 1;
@@ -32,7 +33,7 @@ body {
     margin-bottom: 2px;
 }
 
-#else p {
+#content-area p {
     font-size: large;
 }
 
@@ -40,3 +41,6 @@ body {
     flex-basis: 20%;
 }
 
+#contacts {
+    display: none;
+}

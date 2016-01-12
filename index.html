@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="js/portfolio.js"></script>
-
     <title>Kate Butenko</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -15,23 +13,37 @@
     <link href="portfolio.css" rel="stylesheet">
 </head>
 <body>
-<div id="main">
-    <div id="else">
-        <h1> Hello World!</h1>
-        <p>I glad that you`ve visited my profile's page. I hope you'll find all necessary information here. </p>
+<div id="main" class="container">
+    <div id="content-area" class="center-block">
+
+        <div id="welcome" class="content">
+            <h1> Hello World!</h1>
+            <p>I glad that you`ve visited my profile's page. I hope you'll find all necessary information here. </p>
+        </div>
+
+        <div id="contacts" class="content">
+            <h1>Contacts</h1>
+            <p>
+                <strong>Kate Butenko</strong><br>
+                <abbr title="phone">P:</abbr> +380-63-892-86-89
+            </p>
+            <p class="text-center">
+                <span><i class="glyphicon glyphicon-envelope"></i>katya.butenko.job@gmail.com</span>
+            </p>
+        </div>
     </div>
     <div id="btn" class="text-right">
+        <div class="fbt">
+            <button class="btn btn-success" type="button" id="home-btn">Home</button>
+        </div>
         <div class="fbt">
             <button class="btn btn-success" type="button">CV</button>
         </div>
         <div class="fbt">
-            <button class="btn btn-success" type="button">Contacts</button>
+            <button class="btn btn-success" type="button" id="contacts-btn">Contacts</button>
         </div>
         <div class="fbt">
             <button class="btn btn-success" type="button">Projects</button>
-        </div>
-        <div class="fbt">
-            <button class="btn btn-success" type="button">Photos</button>
         </div>
         <div class="fbt">
             <button class="btn btn-success" type="button">Feedbacks</button>
@@ -40,11 +52,8 @@
     <div id="photo">
         <img src="photos/face.JPG" alt="Kate Butenko" class="img-responsive img-thumbnail">
     </div>
-
-    <div id="inf">
-
-    </div>
 </div>
+<script src="js/portfolio.js"></script>
 </body>
 </html>
 
