@@ -14,6 +14,7 @@ body {
     background-color: white;
     background-image: url("photos/leafBorder.png");
     background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: 10%;
     opacity: 0.5;
 }
@@ -24,13 +25,21 @@ body {
     opacity: 1;
 }
 
+#else {
+    display: flex;
+    flex-basis: 30%;
+}
+
 #btn {
     display: flex;
     flex-direction: column;
-    flex-basis: auto;
-    justify-content: space-between;
+    flex-basis: 30%;
+
+    justify-content: space-around;
     margin-top: 2px;
     margin-bottom: 2px;
+    align-content: space-between;
+
 }
 
 #content-area p {
@@ -38,9 +47,9 @@ body {
 }
 
 #photo {
-    flex-basis: 20%;
+    flex-basis: 70%;
 }
 
-#contacts {
+.content {
     display: none;
 }

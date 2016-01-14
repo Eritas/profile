@@ -5,12 +5,31 @@ var contentDivs = $(".content");
 
 var allButtons = $(".btn");
 
+function startPage() {
+
+}
+
 function hidePreviousContent(showDiv, activeButton) {
-    contentDivs.hide();
+    for (var i = 0; i < contentDivs.length; i++) {
+        $(contentDivs[i]).hide();
+    }
+    ;
     showDiv.show();
-    allButtons.removeClass("active");
+
+    for (var i = 0; i < allButtons.length; i++) {
+        $(allButtons[i]).removeClass("active");
+    }
+    ;
+
     activeButton.addClass("active");
 };
+
+var homeBtn = $("#home-btn");
+homeBtn.click(function () {
+    console.debug("home btn clicked");
+    var homeDiv = $("#welcome");
+    hidePreviousContent(homeDiv, homeBtn);
+});
 
 var contactBtn = $("#contacts-btn");
 contactBtn.click(function () {
@@ -19,10 +38,12 @@ contactBtn.click(function () {
     hidePreviousContent(contactsDiv, contactBtn);
 });
 
-var homeBtn = $("#home-btn");
-homeBtn.click(function () {
-    console.debug("home btn clicked");
-    var homeDiv = $("#welcome");
-    hidePreviousContent(homeDiv, homeBtn);
+var cvBtn = $("#cv-btn");
+cvBtn.click(function () {
+    console.debug("cv btn clicked");
+    var cvDiv = $("#cv");
+    hidePreviousContent(cvDiv, cvBtn);
 });
+
+
 
