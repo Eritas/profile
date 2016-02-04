@@ -7,21 +7,35 @@
 
     <title>Kate Butenko</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+          crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+          crossorigin="anonymous">
+    <link href="portfolio.css" rel="stylesheet">
     <script type="text/javascript"
             src="js/lib/jquery-2.1.4.min.js"></script>
-    <link href="portfolio.css" rel="stylesheet">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+
+
 </head>
 <body>
 <div id="main" class="container">
-    <div id="content-area" class="center-block">
+    <div id="content-area" class="center-block tab-content">
 
-        <div id="welcome" class="content">
+        <div id="welcome" class="content tab-pane fade in active">
             <h1> Hello World!</h1>
             <p>I glad that you`ve visited my profile's page. I hope you'll find all necessary information here. </p>
         </div>
 
-        <div id="cv" class="content">
+        <div id="cv" class="content tab-pane fade">
             <h1>My CV</h1>
             <table class="table">
                 <tr>
@@ -73,7 +87,7 @@
             </table>
         </div>
 
-        <div id="contacts" class="content">
+        <div id="contacts" class="content tab-pane fade">
             <h1>Contacts</h1>
             <p>
                 <strong>Kate Butenko</strong><br>
@@ -85,29 +99,23 @@
         </div>
     </div>
     <div id="else">
-        <div id="btn" class="text-right">
-        <div class="fbt">
-            <button class="btn btn-success" type="button" id="home-btn">Home</button>
-        </div>
-        <div class="fbt">
-            <button class="btn btn-success" type="button" id="cv-btn">CV</button>
-        </div>
-        <div class="fbt">
-            <button class="btn btn-success" type="button" id="contacts-btn">Contacts</button>
-        </div>
-        <div class="fbt">
-            <button class="btn btn-success" type="button">Projects</button>
-        </div>
-        <div class="fbt">
-            <button class="btn btn-success" type="button">Feedbacks</button>
-        </div>
+        <div id="tabs" class="text-right">
+            <ul class="nav nav-tabs nav-stacked">
+                <li class="btn-tab active" id="homeTab"><a class="btn-name" data-toggle="tab"
+                                                           href="#welcome"><b>Home</b></a></li>
+                <li class="btn-tab" id="cvTab"><a class="btn-name" data-toggle="tab" href="#cv"><b>CV</b></a></li>
+                <li class="btn-tab" id="contactsTab"><a class="btn-name" data-toggle="tab"
+                                                        href="#contacts"><b>Contacts</b></a></li>
+                <li class="btn-tab"><a class="btn-name" data-toggle="tab" href=""><b>Projects</b></a></li>
+                <li class="btn-tab"><a class="btn-name" data-toggle="tab" href=""><b>Feedbacks</b></a></li>
+            </ul>
     </div>
         <div id="photo">
         <img src="photos/face.JPG" alt="Kate Butenko" class="img-responsive img-thumbnail">
     </div>
     </div>
 </div>
-<script src="js/portfolio.js"></script>
+<!--<script src="js/portfolio.js"></script>-->
 </body>
 </html>
 

@@ -53,3 +53,19 @@ body {
 .content {
     display: none;
 }
+
+ul.nav-tabs li.active {
+    background-color: white;
+    opacity: 0.5;
+}
+
+ul.nav-tabs li {
+    background-color: white;
+    opacity: 0.25;
+}
+
+.btn-name {
+    color: black;
+    text-decoration: underline;
+    opacity: 1;
+}
