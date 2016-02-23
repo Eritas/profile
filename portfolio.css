@@ -4,25 +4,22 @@ body {
 
 #main {
     display: flex;
-
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 #content-area {
     flex-basis: 70%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     background-image: url("photos/leafBorder.png");
     background-repeat: no-repeat;
     background-repeat: repeat-y;
     background-size: 10%;
-    opacity: 0.5;
 }
 
 #content-area h1, p, address {
     text-align: center;
     color: black;
-    opacity: 1;
 }
 
 #else {
@@ -55,17 +52,19 @@ body {
 }
 
 ul.nav-tabs li.active {
-    background-color: white;
-    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 ul.nav-tabs li {
-    background-color: white;
-    opacity: 0.25;
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .btn-name {
     color: black;
     text-decoration: underline;
-    opacity: 1;
 }
+
+.projects-tab {
+    color: black;
+}
+
