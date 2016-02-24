@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
           integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
           crossorigin="anonymous">
-    <link href="portfolio.css" rel="stylesheet">
     <link rel="stylesheet" href="projects/Gallery/imgGame.css">
+    <link href="portfolio.css" rel="stylesheet">
     <script type="text/javascript"
             src="js/lib/jquery-2.1.4.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
@@ -33,26 +33,35 @@
     <div id="content-area" class="center-block tab-content">
 
         <div id="welcome" class="content tab-pane fade in active">
-            <h1> Hello World!</h1>
-            <p>I glad that you`ve visited my profile's page. I hope you'll find all necessary information here. </p>
+            <h1 class="title"> Hello World!</h1>
+            <p class="textContent">I glad that you`ve visited my profile's page. I hope you'll find all necessary
+                information here. </p>
         </div>
 
         <div id="cv" class="content tab-pane fade">
-            <h1>My CV</h1>
-            <table class="table">
+
+            <h1 class="title">My CV</h1>
+            <div id="cvTableDiv">
+                <table id="cvTable" class="table table-condensed">
                 <tr>
                     <th>Personal data</th>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Name</td>
                     <td>Catherine Butenko</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Date of birth</td>
                     <td>18.08.1990</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <th>Work experience</th>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Altron</td>
@@ -66,6 +75,8 @@
                 </tr>
                 <tr>
                     <th>Education</th>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Karazin Kharkiv National University</td>
@@ -79,28 +90,60 @@
                 </tr>
                 <tr>
                     <th>Books</th>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Head First HTML with CSS & XHTML</td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>Head First JavaScript Programming</td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </table>
+            </div>
         </div>
 
         <div id="contacts" class="content tab-pane fade">
-            <h1>Contacts</h1>
-            <p>
-                <strong>Kate Butenko</strong><br>
-                <abbr title="phone">P:</abbr> +380-63-892-86-89
-            </p>
-            <p class="text-center">
-                <span><i class="glyphicon glyphicon-envelope"></i>katya.butenko.job@gmail.com</span>
-            </p>
+            <h1 class="title">Contacts</h1>
+            <div id="contactsLogo">
+                <div>
+                    <p>
+                        <img src="logo/iphone.png" alt="phone logo">
+                        Phone: +380-63-892-86-89
+                    </p>
+                </div>
+                <div>
+                    <p class="text-center">
+                        <img src="logo/email2.png" alt="email logo">
+                        katya.butenko.job@gmail.com
+                    </p>
+                </div>
+                <div>
+                    <p class="text-center">
+                        <img src="logo/1skype.png" alt="skype logo">
+                        katyabutenko1
+                    </p>
+                </div>
+            </div>
+            <div id="socNetLogo">
+                <div class="socNetDiv"><a class="socNet" href="https://ua.linkedin.com/in/catherine-butenko-58549064">
+                    <img src="logo/linkedin.png" alt="linkedin logo"></a></div>
+                <div class="socNetDiv"><a class="socNet" href="https://www.instagram.com/ereitas/">
+                    <img src="logo/instagram.png" alt="instagram logo"></a></div>
+                <div class="socNetDiv"><a class="socNet" href="https://vk.com/id264512703">
+                    <img src="logo/2vk.png" alt="vk logo"></a></div>
+                <div class="socNetDiv"><a class="socNet" href="https://www.facebook.com/kate.butenko.16">
+                    <img src="logo/facebook.png" alt="facebook logo"></a></div>
+                <div class="socNetDiv"><a class="socNet" href="https://github.com/Eritas">
+                    <img src="logo/git.png" alt="github logo"></a></div>
+            </div>
         </div>
         <div id="projects" class="content tab-pane fade">
-            <h1>Here is some of my projects</h1>
+            <h1 class="title">Here is some of my projects</h1>
             <ul class="nav nav-tabs">
                 <li class="active"><a class="projects-tab" data-toggle="tab" href="#battleship-app">Battleship</a></li>
                 <li><a class="projects-tab" data-toggle="tab" href="#gallery-app">Useless gallery</a></li>
@@ -110,7 +153,8 @@
                     <div id="board">
                         <div id="messageArea">
                         </div>
-                        <table class="battleship">
+                        <div id="tableDiv">
+                            <table class="battleship" id="battleshipTable">
                             <tr>
                                 <td id="a" class="letter">A</td>
                                 <td id="00" class="canShoot"></td>
@@ -192,16 +236,19 @@
                                 <td class="letter">6</td>
                             </tr>
                         </table>
-                        <form role="form">
-                            <div class="form-group">
-                                <label for="guessInput">Shoot coordinates</label>
-                                <input type="text" id="guessInput" placeholder="A0" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="fireButton" class="sr-only">Fire Button</label>
-                                <input type="button" id="fireButton" value="Fire!" class="btn btn-default">
-                            </div>
-                        </form>
+                        </div>
+                        <div id="formDiv">
+                            <form id="battleshipForm" role="form">
+                                <div class="form-group">
+                                    <label for="guessInput">Shoot coordinates</label>
+                                    <input type="text" id="guessInput" placeholder="A0" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="fireButton" class="sr-only">Fire Button</label>
+                                    <input type="button" id="fireButton" value="Fire!" class="btn btn-default">
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="tab-pane" id="gallery-app">
@@ -230,7 +277,7 @@
 </div>
 <script src="projects/Gallery/imgGame.js"></script>
 <script src="projects/Battleship/battleship.js"></script>
-<!--<script src="js/portfolio.js"></script>-->
+<script src="js/portfolio.js"></script>
 </body>
 </html>
 

@@ -47,9 +47,7 @@ body {
     flex-basis: 70%;
 }
 
-.content {
-    display: none;
-}
+
 
 ul.nav-tabs li.active {
     background-color: rgba(255, 255, 255, 0.5);
@@ -68,3 +66,36 @@ ul.nav-tabs li {
     color: black;
 }
 
+#cvTable {
+    border: hidden;
+    width: 100%;
+}
+
+#cvTableDiv {
+    padding-left: 75px;
+    padding-right: 15px;
+}
+
+#cvTable.table > tbody > tr > td,
+#cvTable.table > tbody > tr > th {
+    border-top: 1px solid #5C985E;
+}
+
+#contactsLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 75px;
+}
+
+#socNetLogo {
+    display: flex;
+    padding-left: 75px;
+    align-items: baseline;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.textContent {
+    margin-left: 75px;
+}
