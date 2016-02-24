@@ -59,7 +59,7 @@ ul.nav-tabs li {
 
 .btn-name {
     color: black;
-    text-decoration: underline;
+    text-align: center;
 }
 
 .projects-tab {
@@ -98,4 +98,9 @@ ul.nav-tabs li {
 
 .textContent {
     margin-left: 75px;
+}
+
+#btnContainer li {
+    height: 65px;
+    padding-top: 11px;
 }
