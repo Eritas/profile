@@ -2,6 +2,10 @@ body {
     background-image: url("photos/background.jpg");
 }
 
+header, nav, aside {
+    display: block;
+}
+
 #main {
     display: flex;
     margin-top: 10px;
