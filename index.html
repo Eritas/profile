@@ -2,49 +2,281 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kate Butenko!</title>
 
-    <scrypt src="portfolio.js"></scrypt>
+    <link rel="stylesheet" href="projects/Battleship/battleship.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+          crossorigin="anonymous">
 
-    <title>Kate Butenko</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="projects/Gallery/imgGame.css">
     <link href="portfolio.css" rel="stylesheet">
+    <script type="text/javascript"
+            src="js/lib/jquery-2.1.4.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+
+
 </head>
 <body>
-<div id="main">
-    <div id="else">
-        <h1> Hello World!</h1>
-        <p>I glad that you`ve visited my profile's page. I hope you'll find all necessary information here. </p>
+<div id="main" class="container">
+    <div id="content-area" class="center-block tab-content">
+
+        <div id="welcome" class="content tab-pane fade in active">
+            <h1 class="title"> Hello World!</h1>
+            <p class="textContent">I glad that you`ve visited my profile's page. I hope you'll find all necessary
+                information here. </p>
+        </div>
+
+        <div id="cv" class="content tab-pane fade">
+
+            <h1 class="title">My CV</h1>
+            <div id="cvTableDiv">
+                <table id="cvTable" class="table table-condensed">
+                <tr>
+                    <th>Personal data</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Catherine Butenko</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Date of birth</td>
+                    <td>18.08.1990</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Work experience</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Altron</td>
+                    <td>HR manager</td>
+                    <td>January 2013 - July 2014</td>
+                </tr>
+                <tr>
+                    <td>Freelance</td>
+                    <td>Recruiter</td>
+                    <td>June 2013 - Present</td>
+                </tr>
+                <tr>
+                    <th>Education</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Karazin Kharkiv National University</td>
+                    <td>Psychology</td>
+                    <td>September 2008 - July 2013</td>
+                </tr>
+                <tr>
+                    <td>Vector Business Group</td>
+                    <td>HR/IT recruiting</td>
+                    <td>February 2013 - April 2013</td>
+                </tr>
+                <tr>
+                    <th>Books</th>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Head First HTML with CSS & XHTML</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Head First JavaScript Programming</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            </div>
+        </div>
+
+        <div id="contacts" class="content tab-pane fade">
+            <h1 class="title">Contacts</h1>
+            <div id="contactsLogo">
+                <div>
+                    <p>
+                        <img class="socNetImg"  src="logo/iphone.png" alt="phone logo">
+                        Phone: +380-63-892-86-89
+                    </p>
+                </div>
+                <div>
+                    <p class="text-center">
+                        <img class="socNetImg"  src="logo/email2.png" alt="email logo">
+                        katya.butenko.job@gmail.com
+                    </p>
+                </div>
+                <div>
+                    <p class="text-center">
+                        <img class="socNetImg"  src="logo/1skype.png" alt="skype logo">
+                        katyabutenko1
+                    </p>
+                </div>
+            </div>
+            <div id="socNetLogo">
+                <div class="socNetDiv"><a class="socNet" target="_blank"
+                                          href="https://ua.linkedin.com/in/catherine-butenko-58549064">
+                    <img class="socNetImg" src="logo/linkedin.png" alt="linkedin logo"></a></div>
+                <div class="socNetDiv"><a class="socNet" target="_blank" href="https://www.instagram.com/ereitas/">
+                    <img class="socNetImg" src="logo/instagram.png" alt="instagram logo"></a></div>
+                <div class="socNetDiv"><a class="socNet" target="_blank" href="https://vk.com/id264512703">
+                    <img class="socNetImg" src="logo/2vk.png" alt="vk logo"></a></div>
+                <div class="socNetDiv"><a class="socNet" target="_blank"
+                                          href="https://www.facebook.com/kate.butenko.16">
+                    <img class="socNetImg" src="logo/facebook.png" alt="facebook logo"></a></div>
+                <div class="socNetDiv"><a class="socNet" target="_blank" href="https://github.com/Eritas">
+                    <img class="socNetImg" src="logo/git.png" alt="github logo"></a></div>
+            </div>
+        </div>
+        <div id="projects" class="content tab-pane fade">
+            <h1 class="title">Here is some of my projects</h1>
+            <ul class="nav nav-tabs">
+                <li class="active"><a class="projects-tab" data-toggle="tab" href="#battleship-app">Battleship</a></li>
+                <li><a class="projects-tab" data-toggle="tab" href="#gallery-app">Useless gallery</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="battleship-app">
+                    <div id="board">
+                        <div id="messageArea">
+                        </div>
+                        <div id="tableDiv">
+                            <table class="battleship" id="battleshipTable">
+                            <tr>
+                                <td id="a" class="letter">A</td>
+                                <td id="00" class="canShoot"></td>
+                                <td id="01" class="canShoot"></td>
+                                <td id="02" class="canShoot"></td>
+                                <td id="03" class="canShoot"></td>
+                                <td id="04" class="canShoot"></td>
+                                <td id="05" class="canShoot"></td>
+                                <td id="06" class="canShoot"></td>
+                            </tr>
+                            <tr>
+                                <td id="b" class="letter">B</td>
+                                <td id="10" class="canShoot"></td>
+                                <td id="11" class="canShoot"></td>
+                                <td id="12" class="canShoot"></td>
+                                <td id="13" class="canShoot"></td>
+                                <td id="14" class="canShoot"></td>
+                                <td id="15" class="canShoot"></td>
+                                <td id="16" class="canShoot"></td>
+                            </tr>
+                            <tr>
+                                <td id="c" class="letter">C</td>
+                                <td id="20" class="canShoot"></td>
+                                <td id="21" class="canShoot"></td>
+                                <td id="22" class="canShoot"></td>
+                                <td id="23" class="canShoot"></td>
+                                <td id="24" class="canShoot"></td>
+                                <td id="25" class="canShoot"></td>
+                                <td id="26" class="canShoot"></td>
+                            </tr>
+                            <tr>
+                                <td id="d" class="letter">D</td>
+                                <td id="30" class="canShoot"></td>
+                                <td id="31" class="canShoot"></td>
+                                <td id="32" class="canShoot"></td>
+                                <td id="33" class="canShoot"></td>
+                                <td id="34" class="canShoot"></td>
+                                <td id="35" class="canShoot"></td>
+                                <td id="36" class="canShoot"></td>
+                            </tr>
+                            <tr>
+                                <td id="e" class="letter">E</td>
+                                <td id="40" class="canShoot"></td>
+                                <td id="41" class="canShoot"></td>
+                                <td id="42" class="canShoot"></td>
+                                <td id="43" class="canShoot"></td>
+                                <td id="44" class="canShoot"></td>
+                                <td id="45" class="canShoot"></td>
+                                <td id="46" class="canShoot"></td>
+                            </tr>
+                            <tr>
+                                <td id="f" class="letter">F</td>
+                                <td id="50" class="canShoot"></td>
+                                <td id="51" class="canShoot"></td>
+                                <td id="52" class="canShoot"></td>
+                                <td id="53" class="canShoot"></td>
+                                <td id="54" class="canShoot"></td>
+                                <td id="55" class="canShoot"></td>
+                                <td id="56" class="canShoot"></td>
+                            </tr>
+                            <tr>
+                                <td id="g" class="letter">G</td>
+                                <td id="60" class="canShoot"></td>
+                                <td id="61" class="canShoot"></td>
+                                <td id="62" class="canShoot"></td>
+                                <td id="63" class="canShoot"></td>
+                                <td id="64" class="canShoot"></td>
+                                <td id="65" class="canShoot"></td>
+                                <td id="66" class="canShoot"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="letter">0</td>
+                                <td class="letter">1</td>
+                                <td class="letter">2</td>
+                                <td class="letter">3</td>
+                                <td class="letter">4</td>
+                                <td class="letter">5</td>
+                                <td class="letter">6</td>
+                            </tr>
+                        </table>
+                        </div>
+                        <div id="formDiv">
+                            <form id="battleshipForm" role="form">
+                                <div class="form-group">
+                                    <label for="guessInput">Shoot coordinates</label>
+                                    <input type="text" id="guessInput" placeholder="A0" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="fireButton" class="sr-only">Fire Button</label>
+                                    <input type="button" id="fireButton" value="Fire!" class="btn btn-default">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="gallery-app">
+                    <div id="images-holder">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="btn" class="text-right">
-        <div class="fbt">
-            <button class="btn btn-success" type="button">CV</button>
-        </div>
-        <div class="fbt">
-            <button class="btn btn-success" type="button">Contacts</button>
-        </div>
-        <div class="fbt">
-            <button class="btn btn-success" type="button">Projects</button>
-        </div>
-        <div class="fbt">
-            <button class="btn btn-success" type="button">Photos</button>
-        </div>
-        <div class="fbt">
-            <button class="btn btn-success" type="button">Feedbacks</button>
-        </div>
-    </div>
-    <div id="photo">
+    <aside id="else">
+        <nav id="tabs" class="text-right">
+            <ul class="nav nav-tabs nav-stacked" id="btnContainer">
+                <li class="btn-tab active" id="homeTab"><a class="btn-name" data-toggle="tab"
+                                                           href="#welcome">Home</a></li>
+                <li class="btn-tab" id="cvTab"><a class="btn-name" data-toggle="tab" href="#cv">CV</a></li>
+                <li class="btn-tab" id="contactsTab"><a class="btn-name" data-toggle="tab"
+                                                        href="#contacts">Contacts</a></li>
+                <li class="btn-tab"><a class="btn-name" data-toggle="tab" href="#projects">Projects</a></li>
+                <!--<li class="btn-tab"><a class="btn-name" data-toggle="tab" href="">Feedbacks</a></li>-->
+            </ul>
+        </nav>
+        <div id="photo">
         <img src="photos/face.JPG" alt="Kate Butenko" class="img-responsive img-thumbnail">
     </div>
-
-    <div id="inf">
-
-    </div>
+    </aside>
 </div>
+<script src="projects/Gallery/imgGame.js"></script>
+<script src="projects/Battleship/battleship.js"></script>
+<script src="js/portfolio.js"></script>
 </body>
 </html>
 

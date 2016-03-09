@@ -1,0 +1,21 @@
+#images-holder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.galleryImage {
+    display: flex;
+    max-width: 32%;
+    background-color: rgba(19, 8, 6, 0.66);
+    height: 350px;
+    margin-bottom: 9px;
+}
+
+div.galleryImage img {
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+}
