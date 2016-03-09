@@ -3,7 +3,7 @@ function hoveredLinkStyle() {
     var hoveredLink = $("a.socNet");
     hoveredLink.mouseover(function (e) {
         $(e.currentTarget).parent(".socNetDiv").css({
-            "border": "9px groove #3e8f3e"
+            "border": "4px groove #0f0f0f"
         });
 
     });

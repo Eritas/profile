@@ -51,8 +51,6 @@ header, nav, aside {
     flex-basis: 70%;
 }
 
-
-
 ul.nav-tabs li.active {
     background-color: rgba(255, 255, 255, 0.5);
 }
@@ -98,6 +96,10 @@ ul.nav-tabs li {
     align-items: baseline;
     justify-content: space-around;
     padding-bottom: 20px;
+}
+
+.socNetImg{
+    height: 120px;
 }
 
 .textContent {

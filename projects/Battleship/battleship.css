@@ -1,0 +1,89 @@
+body {
+	background-color: #000000;
+}
+
+div#board {
+	display: flex;
+	background: url("imgs/sea.jpg") no-repeat center fixed;
+	background-size: 100%;
+	flex-wrap: wrap;
+}
+
+div#messageArea {
+	flex-basis: 20%;
+	flex-grow: 3;
+	color: rgb(0, 0, 0);
+	background-color: rgba(169, 191, 241, 0.5);
+	align-self: center;
+	height: 70px;
+}
+
+table#battleshipTable tr td {
+	border: 2px solid rgb(255, 251, 249);
+}
+
+#battleshipTable td.letter{
+	font-family: "Times New Roman";
+	font-weight: bold;
+	text-align: center;
+	font-size: 150%;
+}
+
+#tableDiv {
+	flex-basis: 60%;
+}
+
+table#battleshipTable {
+	background-color: rgba(140, 168, 207, 0.5);
+	width: 465px;
+	height: 465px;
+	border-collapse: collapse;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+table.battleship td {
+	background-color: rgba(140, 168, 207, 0.5);
+}
+
+#formDiv{
+	flex-basis: 20%;
+	align-self: center;
+	flex-grow: 3;
+}
+
+form {
+	padding: 5px;
+	background-color: rgba(127, 197, 248, 0.5);
+}
+
+form#battleshipForm input {
+	background-color: rgba(140, 168, 207, 0.5);
+	border-color: rgb(255, 251, 249);
+	font-size: 1em;
+}
+
+input#guessInput {
+	text-transform: capitalize;
+}
+
+.hit {
+	background: url("imgs/ship1.png") no-repeat center center;
+	background-size: 200%;
+}
+
+.miss {
+	background: url("imgs/miss1.png") no-repeat center center;
+	background-size: 60px;
+}
+
+.canShoot {
+	cursor: pointer;
+}
+
+
+
+
+
+
+
