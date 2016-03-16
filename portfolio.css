@@ -1,10 +1,8 @@
 body {
     background-image: url("photos/background.jpg");
+    font-family: "Comic Sans MS", "Verdana", "Arial" ;
 }
 
-header, nav, aside {
-    display: block;
-}
 
 #main {
     display: flex;

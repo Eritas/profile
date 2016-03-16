@@ -11,6 +11,7 @@
     background-color: rgba(19, 8, 6, 0.66);
     height: 350px;
     margin-bottom: 9px;
+    flex: 32%;
 }
 
 div.galleryImage img {
